@@ -1,0 +1,16 @@
+import java.math.BigInteger;
+public class fib {
+	public static BigInteger fibb(int n) { 
+        
+        BigInteger   fib0=new BigInteger("0");
+        BigInteger   fib1=new BigInteger("0");
+        BigInteger   fib2=new BigInteger("1");
+        for(int i = 0; i <= n; i++){
+            fib0 = fib1;
+            fib1 = fib2;
+            fib2 = fib0.add(fib1);
+        }
+        return fib0; 
+    }
+	
+}
